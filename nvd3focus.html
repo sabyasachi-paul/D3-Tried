@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <style>
+        #multiLineChart svg {
+            height: 400px;
+            width: 80%;
+            margin-left: 5%;
+        }
+        
+        svg .nv-series-1 {
+            stroke-dasharray: 5, 5;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="nv.d3.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <div id="multiLineChart">
+        <svg></svg>
+    </div>
+    <script>
+        d3.json('culi.json', function (data) {
+            draw_line_chart(data);
+        });
+
+        function draw_line_chart(data) {
+            nv.addGraph(function () {
+                var chart = nv.models.lineWithFocusChart()
+                    .x(function (d) {
+                        return d[0]
+                    })
+                    .y(function (d) {
+                        return d[1]
+                    })
+                    .color(d3.scale.category10().range())
+                    .useInteractiveGuideline(true);
+
+                chart.xAxis
+                    .tickFormat(function (d) {
+                        return d3.time.format('%x')(new Date(d))
+                    });
+                
+                chart.x2Axis
+                    .tickFormat(function (d) {
+                        return d3.time.format('%x')(new Date(d))
+                    });
+
+                chart.yAxis
+                    .tickFormat(function (d) {
+                        return d3.round(d)
+                    });
+
+                chart.y2Axis
+                    .tickFormat(function (d) {
+                        return d3.round(d)
+                    });
+
+                d3.select('#multiLineChart svg')
+                    .datum(data)
+                    .transition().duration(500)
+                    .call(chart);
+
+                nv.utils.windowResize(chart.update);
+
+                return chart;
+            });
+        }
+    </script>

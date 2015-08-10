@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<pre id="nvd3_chart">
+    <svg style="height: 500px; width: 800px;"></svg>
+</pre>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://nvd3.org/assets/js/nv.d3.js"></script>
+<script type="text/javascript">
+var datas = [
+  {key: 'data1',
+  values: [{x: '2015/03/11', y: 92},
+        {x: '2015/03/18', y: 10},
+        {x: '2015/03/25', y: 21},
+        {x: '2015/04/01', y: 0},
+        {x: '2015/04/08', y: 0},
+  ]},
+  {key: 'data2',
+  values: [{x: '2015/03/11', y: 56},
+        {x: '2015/03/18', y: 22},
+        {x: '2015/03/25', y: 0},
+        {x: '2015/04/01', y: 0},
+        {x: '2015/04/08', y: 0},
+  ]},
+  {key: 'data3',
+  values: [{x: '2015/03/11', y: 64},
+        {x: '2015/03/18', y: 98},
+        {x: '2015/03/25', y: 36},
+        {x: '2015/04/01', y: 0},
+        {x: '2015/04/08', y: 0},
+  ]}
+];
+    function update_chart(data){
+      nv.addGraph(function() {
+        var width = 800, height = 500;
+
+        var values = data[0].values;
+
+        // Parse date string to Date
+        for( j=0 ; j < data.length ; ++j ){
+            for( i = 0; i < values.length; ++i ) {
+                values = data[j].values;
+                values[i].x = new Date(values[i].x);
+            }
+        }
+
+        // get max and min dates - this assumes data is sorted
+        var maxDate = values[0].x,
+        minDate = values[values.length-1].x;
+
+        var chart = nv.models.lineChart()
+          .x(function(d) { return d.x; })
+          .y(function(d) { return d.y; })
+          .width(width).height(height);
+
+        chart.margin({left: 75});//Margin to see yAxis title
+
+        // xAxis configuration
+        chart.xAxis
+          .axisLabel('Date')
+          .tickFormat(function(d) { return d3.time.format('%x')(new Date(d)); });
+
+        // yAxis configuration
+        chart.yAxis
+          .showMaxMin(false)
+          .axisLabel('Number')
+          .tickFormat();
+
+        // draw chart
+                d3.select('#nvd3_chart svg')
+          .datum(data)
+          .transition().duration(500)
+          .call(chart);
+
+        // Get now timestamp
+        // position will be updated each time
+        var date_now = (new Date()).getTime();
+
+        // If we want a fixed position
+        // var date_now = (new Date("2015/03/18")).getTime();
+
+        // Get position of now date on xAxis thanks to scale func
+        var date_now_xposition = chart.xAxis.scale()(date_now);
+
+        // When nvd3 draw chart it append a rectangle of the inner
+        // size of our chart (without label axis or title)
+        // let's get it to know height and width of our rectangle
+        var rect_background = document.getElementsByClassName("nvd3")[0].firstChild.firstChild;
+
+        // draw a background rectangle to indicate the future
+        // Here we will append new rectangle to ".nv-groups"
+        // this allow to avoid to break nvd3 hover fearure on chart
+        d3.select('.nv-groups').append("rect")
+          .attr("x", date_now_xpos) // start rectangle on the good position
+          .attr("y", 0) // no vertical translate
+          .attr("width", rect_back.getAttribute('width') - date_now_xpos) // correct size
+          .attr("height", rect_back.getAttribute('height')) // full height
+          .attr("fill", "rgba(66,139,202, 0.2)"); // transparency color to see grid
+
+        nv.utils.windowResize(chart.update);
+        return chart;
+      });
+    }
+
+    update_chart(datas);
+</script>
+</body>
+</html>
+

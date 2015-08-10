@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<style>
+    .bar:hover {
+        fill: orange !important;
+    }
+</style>
+
+<body>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="d3.v3.min.js"></script>
+    <script src="topojson.v1.min.js"></script>
+    <script src="datamaps.china.min.js"></script>
+    <div id="container" style="position: relative; width: 500px; height: 500px;"></div>
+    <div id="bubbleChart" style="width:500px; height:500px;"></div>
+    <script>
+        d3.json("chinaMapData.json", function (map_data) {
+            var data = new Object();
+            var fill_obj = new Object();
+            map_data.forEach(function (d, i) {
+                fill_obj[d.province_code] = d.color;
+                var numberOfThings = "";
+                d.city.forEach(function (d1, i1) {
+                    numberOfThings += "<br/>City : " + d1.name + ", Sale : " + d1.value;
+                });
+                data[d.province_code] = {
+                    "fillKey": d.province_code,
+                    "numberOfThings": numberOfThings
+                };
+            });
+            fill_obj["defaultFill"] = '#e0f4f4';
+            var map = new Datamap({
+                element: document.getElementById('container'),
+                scope: 'china',
+                responsive: true,
+                fills: fill_obj,
+                data: data,
+                geographyConfig: {
+                    popupTemplate: function (geo, data) {
+                        return ['<div class="hoverinfo"><strong>',
+                                   geo.properties.name, '-- ' + data.numberOfThings,
+                                   '</strong></div>'].join('');
+                    }
+                },
+                setProjection: function (element) {
+                    var width = $("#container svg").parent().width();
+                    //                                mapx = d3.select("svg");
+                    var height = $("#container svg").parent().height();
+                    var projection = d3.geo.equirectangular().scale((width / 120) * 100).translate([width - 1000, height / 1.1]);
+                    //                                var projection = d3.geo.mercator();
+                    var path = d3.geo.path().projection(projection);
+                    return {
+                        path: path,
+                        projection: projection
+                    };
+                }
+            });
+
+            d3.select(window).on('resize', function () {
+                map.resize();
+            });
+        });
+    </script>
+    <script>
+        var root = {};
+        d3.json("bubbleData.json", function (root) {
+
+            var diameter = 840,
+                format = d3.format(",d"),
+                color = d3.scale.category20b();
+
+            var bubble = d3.layout.pack()
+                .sort(null)
+                .size([diameter, diameter])
+                .padding(3.5);
+
+            var svg = d3.select("#bubbleChart").append("svg").attr("id", "bar")
+                .attr("viewBox", "0 0 960 960")
+                .attr("width", diameter)
+                .attr("height", diameter)
+                .attr("class", "bubble");
+
+
+            var node = svg.selectAll(".node")
+                .data(bubble.nodes(classes(root))
+                    .filter(function (d) {
+                        return !d.children;
+                    }))
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function (d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+            d3.selectAll(".node text")
+                .attr("text-anchor", "middle")
+                .style({
+                    "font-size": "20px"
+                });
+
+            node.append("title")
+                .attr("class", "hoverinfo")
+                .text(function (d) {
+                    return d.className + ": " + format(d.value);
+                });
+
+            node.append("circle")
+                .attr("r", function (d) {
+                    return d.r;
+                })
+                .style("fill", function (d) {
+                    return color(d.packageName);
+                })
+                .attr("class", "bar")
+                .on("click", function (d) {
+                    $("#pieChart").show(500);
+                    $("#categorySelect").html("<b>Selected: " + d.className + "</b>");
+                    $("#dealerSelect").show(100);
+                    //                                $("#container").children().prop('disabled',true);
+                    category_name = d.className;
+                    console.log("category_name" + category_name);
+                    $rootScope.$broadcast('categorySelected', category_name);
+                    // call_pie();
+                });
+
+            node.append("text")
+                .attr("dy", ".3em")
+                .attr("class", "bar")
+                .style("text-anchor", "middle")
+                .text(function (d) {
+                    return d.className.substring(0, d.r / 3);
+                });
+
+
+
+            // Returns a flattened hierarchy containing all leaf nodes under the root.
+            function classes(root) {
+                var classes = [];
+
+                function recurse(name, node) {
+                    if (node.children)
+                        node.children.forEach(function (child) {
+                            recurse(node.name, child);
+                        });
+                    else
+                        classes.push({
+                            packageName: name,
+                            className: node.name,
+                            value: node.size
+                        });
+                }
+
+                recurse(null, root);
+                return {
+                    children: classes
+                };
+            }
+
+            var chart = $(".bubble"),
+                aspect = chart.width() / chart.height(),
+                container = chart.parent();
+            $(window).on("resize", function () {
+                var targetWidth = container.width();
+                chart.attr("width", targetWidth);
+                chart.attr("height", Math.round(targetWidth / aspect));
+            }).trigger("resize");
+        });
+    </script>
+</body>
+
+</html>

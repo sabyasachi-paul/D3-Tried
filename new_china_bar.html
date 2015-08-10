@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<style>
+    .bar:hover {
+        fill: orange !important;
+    }
+</style>
+
+<body>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <!--    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">-->
+    <script src="nv.d3.js"></script>
+    <!--    <script src="jquery-ui.min.js"></script>-->
+    <div id="barChart" style="width:45%;height:400px">
+        <svg></svg>
+    </div>
+    <script>
+        var myColors = ["#1e3d3d", "#285151", "#3d7a7a", "#478e8e", "#51a3a3", "#5bb7b7", "#66cccc", "#66cccc", "#75d1d1", "#84d6d6"];
+        d3.scale.myColors = function () {
+            return d3.scale.ordinal().range(myColors);
+        };
+        nv.addGraph(function () {
+            var chart = nv.models.discreteBarChart()
+                .x(function (d) {
+                    return d.label
+                }) //Specify the data accessors.
+                .y(function (d) {
+                    return d.value
+                })
+                .staggerLabels(true) //Too many bars and not enough room? Try staggering labels.
+                .tooltips(true) //Don't show tooltips
+                .showValues(true)
+                .color(d3.scale.myColors().range()); //...instead, show the bar value right on top of each bar.
+
+            d3.select('#barChart svg')
+                .datum(exampleData())
+                .call(chart);
+
+            nv.utils.windowResize(chart.update);
+
+            return chart;
+        });
+
+        //Each bar represents a single discrete quantity.
+        function exampleData() {
+            return [
+                {
+                    key: "Cumulative Return",
+                    values: [
+                        {
+                            "label": "A Label",
+                            "value": 9930
+                        },
+                        {
+                            "label": "B Label",
+                            "value": 8522
+                        },
+                        {
+                            "label": "C Label",
+                            "value": 7223
+                        },
+                        {
+                            "label": "D Label",
+                            "value": 6966
+                        },
+                        {
+                            "label": "E Label",
+                            "value": 5943
+                        },
+                        {
+                            "label": "F Label",
+                            "value": 4806
+                        },
+                        {
+                            "label": "G Label",
+                            "value": 3343
+                        },
+                        {
+                            "label": "H Label",
+                            "value": 2287
+                        },
+                        {
+                            "label": "I Label",
+                            "value": 1135
+                        }
+                    ]
+                }
+            ]
+
+        }
+    </script>
+</body>
+
+</html>

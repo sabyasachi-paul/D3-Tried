@@ -1,0 +1,16 @@
+[
+    {
+        "band_max": 1,
+        "band_min": 0,
+        "sell_in_max": 834,
+        "sell_in_min": 23,
+        "sell_thru_max": 234,
+        "sell_thru_min": 12,
+        "actual_max": 987,
+        "actual_min": 14,
+        "projected_max": 133,
+        "projected_min": 12,
+        "programmed_max": 1232,
+        "programmed_min": 234
+    }
+]

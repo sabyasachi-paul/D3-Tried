@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <style>
+        #chart svg {
+            height: 75%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="chart">
+        <svg></svg>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="nv.d3.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+        nv.addGraph(function () {
+            var chart = nv.models.pieChart()
+                .x(function (d) {
+                    return d.name
+                })
+                .y(function (d) {
+                    return d.sales
+                })
+                .showLegend(false)
+                .showLabels(true);
+
+            d3.select("#chart svg")
+                .datum(exampleData())
+                .transition().duration(350)
+                .call(chart);
+            
+            nv.utils.windowResize(chart.update);
+
+            return chart;
+
+        });
+
+        function exampleData() {
+            return [
+                {
+                    "name": "One",
+                    "sales": 29.765957771107
+      },
+                {
+                    "name": "Two",
+                    "sales": 0
+      },
+                {
+                    "name": "Three",
+                    "sales": 32.807804682612
+      },
+                {
+                    "name": "Four",
+                    "sales": 196.45946739256
+      },
+                {
+                    "name": "Five",
+                    "sales": 0.19434030906893
+      },
+                {
+                    "name": "Six",
+                    "sales": 98.079782601442
+      },
+                {
+                    "name": "Seven",
+                    "sales": 13.925743130903
+      },
+                {
+                    "name": "Eight",
+                    "sales": 5.1387322875705
+      }
+    ];
+        }
+    </script>
+</body>
+
+</html>

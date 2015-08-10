@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    /* CSS goes here. */
+</style>
+
+<body>
+    <div id="uk1" style="height: 500px;"></div>
+    <script src="d3.v3.min.js"></script>
+    <script src="topojson.v1.min.js"></script>
+    <script src="datamaps.none.min.js"></script>
+    <script>
+        //        var width = 960,
+        //            height = 1160;
+        //
+        //        var svg = d3.select("body").append("svg")
+        //            .attr("width", width)
+        //            .attr("height", height);
+        //        d3.json("uk1.json", function (error, uk) {
+        //            if (error) return console.error(error);
+        //            console.log(uk);
+        //
+        //            var subunits = topojson.feature(uk, uk.objects.subunits);
+        //            var projection = d3.geo.mercator();
+        //            var path = d3.geo.path()
+        //                .projection(projection);
+        //                        svg.append("path") .datum(subunits) .attr("d", path);
+        ////            svg.append("path")
+        ////                .datum(topojson.feature(uk, uk.objects.subunits))
+        ////                .attr("d", d3.geo.path().projection(d3.geo.mercator()));
+        //            
+        //            svg.selectAll(".subunit")
+        //                .data(topojson.feature(uk, uk.objects.subunits).features)
+        //                .enter().append("path")
+        //                .attr("class", function (d) {
+        //                    return "subunit " + d.id;
+        //                })
+        //                .attr("d", path);
+        //        });
+        d3.json("map_data.json", function (map_data) {
+            var data = new Object();
+            var fill_obj = new Object();
+            map_data.forEach(function (d, i) {
+                fill_obj[d.country_code] = d.color;
+                data[d.country_code] = {
+                    "fillKey": d.country_code,
+                    "numberOfThings": d.value
+                }
+            });
+            console.log(data);
+            var map = new Datamap({
+                element: document.getElementById('uk1'),
+                responsive: true,
+                fills: fill_obj,
+                data: data,
+                geographyConfig: {
+                    dataUrl: 'uk1.json',
+                    popupTemplate: function (geo, data) {
+                        if (geo.properties.name != "Brazil") {
+                            return ['<div class="hoverinfo"><strong>',
+                                                            'Sales in  ' + geo.properties.name,
+                                                            ': ' + data.numberOfThings,
+                                                            '</strong></div>'].join('');
+                        } else {
+                            return "";
+                        }
+                    }
+                },
+                scope: 'subunits',
+                setProjection: function (element) {
+                    var projection = d3.geo.mercator();
+                    var path = d3.geo.path().projection(projection);
+                    return {
+                        path: path,
+                        projection: projection
+                    };
+                }
+            });
+            map.labels({
+                labelColor: 'black',
+                fontSize: 10
+            });
+            d3.select(window).on('resize', function () {
+                map.resize();
+            });
+        });
+    </script>
+</body>
+
+</html>

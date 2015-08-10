@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #multiLineChart svg {
+            height: 400px;
+            width: 80%;
+            margin-left: 5%;
+        }
+        
+        svg .nv-series-1 {
+            stroke-dasharray: 5, 5;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="nv.d3.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="multiLineChart">
+        <svg></svg>
+    </div>
+    <div id='slider' style='width:75%; margin-left:9%'>
+    </div>
+    <script>
+        var complete_data = [];
+        var dates = [];
+        var date_divider = "";
+        var date_divide_index = 1;
+
+        d3.json('culi.json', function (data) {
+            draw_line_chart(data);
+        });
+
+        function draw_line_chart(data) {
+            var index_slide=0;
+            complete_data = $.extend(true, [], data);
+            nv.addGraph(function () {
+                var chart = nv.models.lineChart()
+                    .useInteractiveGuideline(true)
+                    .x(function (d) {
+                        return d[0]
+                    })
+                    .y(function (d) {
+                        return d[1]
+                    }) //adjusting, 100% is 1.00, not 100 as it is in the data
+                    .color(d3.scale.category10().range())
+                    .useInteractiveGuideline(true);
+
+                chart.xAxis
+                    .tickFormat(function (d) {
+                        return d3.time.format('%x')(new Date(d))
+                    });
+
+                chart.yAxis
+                    .tickFormat(function (d) {
+                        return d3.round(d)
+                    });
+                data[0].values.forEach(function (d) {
+                    if (date_divider == ""){
+                        dates.push(new Date(d[0]));
+                    }
+                    if (new Date(d[0]) >= date_divider && date_divider != "") {
+                        d[1] = 0;
+                    }
+                });
+                index_slide = (date_divider == "" ? dates.length : date_divide_index);
+                data[1].values.forEach(function (d) {
+                    if (new Date(d[0]) < date_divider) {
+                        d[1] = 0;
+                    }
+                });
+                d3.select('#multiLineChart svg')
+                    .datum(data)
+                    .call(chart);
+
+                $('#slider').slider({
+                    value: index_slide,
+                    min: 1,
+                    max: dates.length,
+                    step: 1,
+                    slide: function (event, ui) {
+                        date_divider = dates[ui.value];
+                        date_divide_index = ui.value;
+                        //                            console.log(date_divider);
+                        d3.select("#multiLineChart svg").remove();
+                        d3.select("#multiLineChart").append("svg");
+                        data = "";
+                        draw_line_chart(complete_data);
+                        //                                    console.log(dates[ui.value]);
+                    }
+                });
+
+                //TODO: Figure out a good way to do this automatically
+                nv.utils.windowResize(chart.update);
+
+                return chart;
+            });
+        }
+    </script>
+</body>
+
+</html>

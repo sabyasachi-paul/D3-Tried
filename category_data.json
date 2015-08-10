@@ -1,0 +1,16 @@
+[
+    {"category_name": "BRA", "sales": 10203},
+    {"category_name": "ARG", "sales": 1203},
+    {"category_name": "CHL", "sales": 103},
+    {"category_name": "PER", "sales": 1023},
+    {"category_name": "BOL", "sales": 1203},
+    {"category_name": "COL", "sales": 14203},
+    {"category_name": "ECU", "sales": 15203},
+    {"category_name": "VEN", "sales": 1203},
+    {"category_name": "GUY", "sales": 17020},
+    {"category_name": "GUF", "sales": 18203},
+    {"category_name": "PRY", "sales": 19203},
+    {"category_name": "URY", "sales": 1223},
+    {"category_name": "FLK", "sales": 10303},
+    {"category_name": "SUR", "sales": 10303}
+]

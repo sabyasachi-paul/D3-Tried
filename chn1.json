@@ -1,0 +1,2414 @@
+{
+    "type": "Topology",
+    "objects": {
+        "chn": {
+            "type": "GeometryCollection",
+            "geometries": [{
+                "type": "Point",
+                "properties": {
+                    "name": "Yumen"
+                },
+                "coordinates": [3816, 6632]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linxia"
+                },
+                "coordinates": [4775, 5331]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhuozhou"
+                },
+                "coordinates": [6983, 6542]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Sanming"
+                },
+                "coordinates": [7296, 2451]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huizhou"
+                },
+                "coordinates": [6739, 1482]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chaozhou"
+                },
+                "coordinates": [7130, 1667]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Gyangze"
+                },
+                "coordinates": [2396, 3287]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dali"
+                },
+                "coordinates": [5956, 5084]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yangquan"
+                },
+                "coordinates": [6593, 6029]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shiyan"
+                },
+                "coordinates": [6104, 4400]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Danjiangkou"
+                },
+                "coordinates": [6230, 4384]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shashi"
+                },
+                "coordinates": [6358, 3708]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anlu"
+                },
+                "coordinates": [6611, 4000]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zixing"
+                },
+                "coordinates": [6563, 2371]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Deyang"
+                },
+                "coordinates": [4985, 3958]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tengchong"
+                },
+                "coordinates": [3945, 2083]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Mengzi"
+                },
+                "coordinates": [4811, 1569]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chuxiong"
+                },
+                "coordinates": [4485, 2084]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hengshui"
+                },
+                "coordinates": [6967, 5983]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xuanhua"
+                },
+                "coordinates": [6848, 6867]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Luohe"
+                },
+                "coordinates": [6674, 4707]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Beipiao"
+                },
+                "coordinates": [7854, 7240]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wafangdian"
+                },
+                "coordinates": [8071, 6569]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhucheng"
+                },
+                "coordinates": [7612, 5451]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hangu"
+                },
+                "coordinates": [7331, 6448]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xinyi"
+                },
+                "coordinates": [7431, 4956]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yangzhou"
+                },
+                "coordinates": [7621, 4347]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linhai"
+                },
+                "coordinates": [7917, 3256]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huangyan"
+                },
+                "coordinates": [7940, 3195]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Daan"
+                },
+                "coordinates": [8475, 8375]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changling"
+                },
+                "coordinates": [8420, 7997]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tonghua"
+                },
+                "coordinates": [8729, 7200]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baishan"
+                },
+                "coordinates": [8848, 7268]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yanji"
+                },
+                "coordinates": [9389, 7570]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ergun Zuoqi"
+                },
+                "coordinates": [7987, 9999]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shangdu"
+                },
+                "coordinates": [6587, 7160]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Orongen Zizhiqi"
+                },
+                "coordinates": [8373, 9932]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zalantun"
+                },
+                "coordinates": [8198, 9143]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuchuan"
+                },
+                "coordinates": [6220, 7021]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hanggin Houqi"
+                },
+                "coordinates": [5466, 6956]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anda"
+                },
+                "coordinates": [8654, 8651]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qinggang"
+                },
+                "coordinates": [8790, 8741]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Angangxi"
+                },
+                "coordinates": [8387, 8885]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hulan Ergi"
+                },
+                "coordinates": [8354, 8900]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qingan"
+                },
+                "coordinates": [9038, 8796]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baiquan"
+                },
+                "coordinates": [8787, 9021]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Suileng"
+                },
+                "coordinates": [8967, 8912]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linkou"
+                },
+                "coordinates": [9518, 8308]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Longxi"
+                },
+                "coordinates": [5027, 5161]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Pingliang"
+                },
+                "coordinates": [5385, 5310]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anxi"
+                },
+                "coordinates": [3477, 6838]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Minxian"
+                },
+                "coordinates": [4921, 4973]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jinchang"
+                },
+                "coordinates": [4595, 6221]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Guide"
+                },
+                "coordinates": [4463, 5468]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qinzhou"
+                },
+                "coordinates": [5725, 1135]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Pingxiang"
+                },
+                "coordinates": [5399, 1180]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yishan"
+                },
+                "coordinates": [5733, 1919]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Beihai"
+                },
+                "coordinates": [5809, 990]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hechi"
+                },
+                "coordinates": [5899, 1487]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tongren"
+                },
+                "coordinates": [5815, 2896]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fengjie"
+                },
+                "coordinates": [5883, 3932]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changping"
+                },
+                "coordinates": [7053, 6753]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shaowu"
+                },
+                "coordinates": [7282, 2780]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Longyan"
+                },
+                "coordinates": [7200, 2128]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhangzhou"
+                },
+                "coordinates": [7312, 1925]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Putian"
+                },
+                "coordinates": [7549, 2205]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fuan"
+                },
+                "coordinates": [7654, 2709]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changting"
+                },
+                "coordinates": [7075, 2339]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nanping"
+                },
+                "coordinates": [7400, 2574]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ninde"
+                },
+                "coordinates": [7638, 2589]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jieshou"
+                },
+                "coordinates": [6905, 4609]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tongling"
+                },
+                "coordinates": [7332, 3902]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Maanshan"
+                },
+                "coordinates": [7454, 4142]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fuyang"
+                },
+                "coordinates": [6988, 4501]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yangjiang"
+                },
+                "coordinates": [6313, 1104]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Meizhou"
+                },
+                "coordinates": [7040, 1857]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Heyuan"
+                },
+                "coordinates": [6788, 1682]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qingyuan"
+                },
+                "coordinates": [6499, 1673]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhaoqing"
+                },
+                "coordinates": [6397, 1473]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lianxian"
+                },
+                "coordinates": [6385, 2005]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiangmen"
+                },
+                "coordinates": [6507, 1329]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Maoming"
+                },
+                "coordinates": [6120, 1126]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Gar"
+                },
+                "coordinates": [704, 4286]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Turpan"
+                },
+                "coordinates": [2314, 7586]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Quiemo"
+                },
+                "coordinates": [1677, 6110]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Koktokay"
+                },
+                "coordinates": [2367, 8836]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hancheng"
+                },
+                "coordinates": [6043, 5291]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Weinan"
+                },
+                "coordinates": [5880, 4993]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shuozhou"
+                },
+                "coordinates": [6392, 6469]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xinzhou"
+                },
+                "coordinates": [6444, 6195]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jincheng"
+                },
+                "coordinates": [6464, 5301]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiexiu"
+                },
+                "coordinates": [6300, 5774]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changzhi"
+                },
+                "coordinates": [6512, 5511]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Guangshui"
+                },
+                "coordinates": [6669, 4108]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jingmen"
+                },
+                "coordinates": [6336, 3926]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zicheng"
+                },
+                "coordinates": [6230, 3702]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shishou"
+                },
+                "coordinates": [6388, 3517]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xiaogan"
+                },
+                "coordinates": [6651, 3892]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Puqi"
+                },
+                "coordinates": [6648, 3524]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yunxian"
+                },
+                "coordinates": [6110, 4473]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jinshi"
+                },
+                "coordinates": [6292, 3496]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chenzhou"
+                },
+                "coordinates": [6499, 2318]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhijiang"
+                },
+                "coordinates": [5911, 2823]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xiangtan"
+                },
+                "coordinates": [6476, 2949]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zigong"
+                },
+                "coordinates": [5052, 3426]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yaan"
+                },
+                "coordinates": [4754, 3604]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Langzhong"
+                },
+                "coordinates": [5260, 4094]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Rongzhag"
+                },
+                "coordinates": [4550, 3902]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Simao"
+                },
+                "coordinates": [4385, 1390]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wenshan"
+                },
+                "coordinates": [4959, 1572]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhanyi"
+                },
+                "coordinates": [4883, 2257]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huize"
+                },
+                "coordinates": [4813, 2488]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chengde"
+                },
+                "coordinates": [7358, 6979]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Cangzhou"
+                },
+                "coordinates": [7172, 6167]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baoding"
+                },
+                "coordinates": [6928, 6337]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huanghua"
+                },
+                "coordinates": [7253, 6183]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dingzhou"
+                },
+                "coordinates": [6844, 6223]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nangong"
+                },
+                "coordinates": [6909, 5875]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linqing"
+                },
+                "coordinates": [6963, 5716]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xiangtai"
+                },
+                "coordinates": [6756, 5777]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Puyang"
+                },
+                "coordinates": [6841, 5362]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hebi"
+                },
+                "coordinates": [6707, 5439]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xuchang"
+                },
+                "coordinates": [6637, 4846]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhoukou"
+                },
+                "coordinates": [6779, 4726]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dengzhou"
+                },
+                "coordinates": [6332, 4434]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tieling"
+                },
+                "coordinates": [8391, 7391]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chaoyang"
+                },
+                "coordinates": [7794, 7161]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huanren"
+                },
+                "coordinates": [8658, 7070]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhuanghe"
+                },
+                "coordinates": [8240, 6586]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yishui"
+                },
+                "coordinates": [7479, 5390]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shanxian"
+                },
+                "coordinates": [7033, 5082]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Pingyi"
+                },
+                "coordinates": [7303, 5304]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Pingdu"
+                },
+                "coordinates": [7710, 5697]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Laiwu"
+                },
+                "coordinates": [7310, 5516]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Buizhou"
+                },
+                "coordinates": [7374, 5875]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Liaocheng"
+                },
+                "coordinates": [7014, 5586]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Rizhao"
+                },
+                "coordinates": [7624, 5279]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dezhou"
+                },
+                "coordinates": [7072, 5900]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linchuan"
+                },
+                "coordinates": [7083, 2986]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fengcheng"
+                },
+                "coordinates": [6979, 3056]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jian"
+                },
+                "coordinates": [6844, 2727]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shangrao"
+                },
+                "coordinates": [7365, 3139]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jingdezhen"
+                },
+                "coordinates": [7226, 3385]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Taizhou"
+                },
+                "coordinates": [7703, 4375]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shuyang"
+                },
+                "coordinates": [7506, 4879]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lianyungang"
+                },
+                "coordinates": [7575, 5024]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lishui"
+                },
+                "coordinates": [7703, 3133]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiaojing"
+                },
+                "coordinates": [7975, 3204]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Quzhou"
+                },
+                "coordinates": [7523, 3293]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fuyu"
+                },
+                "coordinates": [8566, 8276]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dunhua"
+                },
+                "coordinates": [9162, 7714]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nongan"
+                },
+                "coordinates": [8627, 8046]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Taonan"
+                },
+                "coordinates": [8208, 8323]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Liuhe"
+                },
+                "coordinates": [8723, 7384]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huinan"
+                },
+                "coordinates": [8819, 7490]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Panshi"
+                },
+                "coordinates": [8783, 7589]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiaohe"
+                },
+                "coordinates": [9009, 7826]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linjiang"
+                },
+                "coordinates": [8937, 7248]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wangqing"
+                },
+                "coordinates": [9428, 7706]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Helong"
+                },
+                "coordinates": [9300, 7463]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shulan"
+                },
+                "coordinates": [8939, 8039]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiutai"
+                },
+                "coordinates": [8746, 7958]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Alxa Zuoqi"
+                },
+                "coordinates": [5208, 6327]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linxi"
+                },
+                "coordinates": [7376, 7765]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Kailu"
+                },
+                "coordinates": [7931, 7786]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Bairin Zuoqi"
+                },
+                "coordinates": [7578, 7909]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yitulihe"
+                },
+                "coordinates": [7987, 9959]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yakeshi"
+                },
+                "coordinates": [7849, 9537]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Bugt"
+                },
+                "coordinates": [8060, 9384]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuyuan"
+                },
+                "coordinates": [5664, 7019]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Bayan Obo"
+                },
+                "coordinates": [5962, 7227]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fengzhen"
+                },
+                "coordinates": [6519, 6824]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Suihua"
+                },
+                "coordinates": [8945, 8722]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shuangyashan"
+                },
+                "coordinates": [9711, 8735]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shangzhi"
+                },
+                "coordinates": [9118, 8289]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fujin"
+                },
+                "coordinates": [9829, 8919]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yian"
+                },
+                "coordinates": [8650, 9107]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tailai"
+                },
+                "coordinates": [8319, 8648]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Longjiang"
+                },
+                "coordinates": [8278, 8941]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Gannan"
+                },
+                "coordinates": [8336, 9119]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hailun"
+                },
+                "coordinates": [8936, 8974]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Mishan"
+                },
+                "coordinates": [9804, 8390]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tieli"
+                },
+                "coordinates": [9132, 8821]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shuangcheng"
+                },
+                "coordinates": [8822, 8329]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhaodong"
+                },
+                "coordinates": [8769, 8553]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lanxi"
+                },
+                "coordinates": [8821, 8610]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Keshan"
+                },
+                "coordinates": [8749, 9151]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nancha"
+                },
+                "coordinates": [9349, 8878]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xinqing"
+                },
+                "coordinates": [9388, 9216]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hulin"
+                },
+                "coordinates": [9999, 8457]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Boli"
+                },
+                "coordinates": [9575, 8454]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ningan"
+                },
+                "coordinates": [9381, 8015]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jyekundo"
+                },
+                "coordinates": [3641, 4537]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Liuzhou"
+                },
+                "coordinates": [5835, 1852]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xingyi"
+                },
+                "coordinates": [5071, 2101]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anshun"
+                },
+                "coordinates": [5253, 2457]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zunyi"
+                },
+                "coordinates": [5427, 2903]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wanzhou"
+                },
+                "coordinates": [5687, 3862]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huaibei"
+                },
+                "coordinates": [7151, 4825]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuhu"
+                },
+                "coordinates": [7435, 4025]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Luan"
+                },
+                "coordinates": [7103, 4148]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Bengbu"
+                },
+                "coordinates": [7252, 4517]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anqing"
+                },
+                "coordinates": [7203, 3763]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Foshan"
+                },
+                "coordinates": [6514, 1467]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nagchu"
+                },
+                "coordinates": [2820, 4065]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nyingchi"
+                },
+                "coordinates": [3235, 3466]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chamdo"
+                },
+                "coordinates": [3729, 3968]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Korla"
+                },
+                "coordinates": [1785, 7216]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Kuqa"
+                },
+                "coordinates": [1222, 7215]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tacheng"
+                },
+                "coordinates": [1224, 8759]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shihezi"
+                },
+                "coordinates": [1764, 8006]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Karamay"
+                },
+                "coordinates": [1559, 8402]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Aksu"
+                },
+                "coordinates": [751, 7037]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Sanya"
+                },
+                "coordinates": [5880, 0]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Haikou"
+                },
+                "coordinates": [6023, 551]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hanzhong"
+                },
+                "coordinates": [5446, 4572]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baoji"
+                },
+                "coordinates": [5468, 4956]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tongchuan"
+                },
+                "coordinates": [5797, 5171]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linfen"
+                },
+                "coordinates": [6233, 5479]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yuci"
+                },
+                "coordinates": [6446, 5971]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Datong"
+                },
+                "coordinates": [6546, 6709]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jianmen"
+                },
+                "coordinates": [6521, 3810]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yichang"
+                },
+                "coordinates": [6191, 3825]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xiantao"
+                },
+                "coordinates": [6570, 3724]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Macheng"
+                },
+                "coordinates": [6849, 3972]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huangshi"
+                },
+                "coordinates": [6862, 3677]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhuzhou"
+                },
+                "coordinates": [6519, 2943]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yongzhou"
+                },
+                "coordinates": [6251, 2451]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yiyang"
+                },
+                "coordinates": [6375, 3180]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changde"
+                },
+                "coordinates": [6262, 3312]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shaoyang"
+                },
+                "coordinates": [6178, 2687]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Leshan"
+                },
+                "coordinates": [4868, 3477]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Panzhihua"
+                },
+                "coordinates": [4517, 2549]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fulin"
+                },
+                "coordinates": [4690, 3410]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Guangyuan"
+                },
+                "coordinates": [5243, 4357]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Luzhou"
+                },
+                "coordinates": [5157, 3266]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yibin"
+                },
+                "coordinates": [5015, 3232]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhaotang"
+                },
+                "coordinates": [4866, 2786]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lijiang"
+                },
+                "coordinates": [4260, 2626]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yuxi"
+                },
+                "coordinates": [4664, 1882]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dali"
+                },
+                "coordinates": [4245, 2288]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qinhuangdao"
+                },
+                "coordinates": [7654, 6663]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Langfang"
+                },
+                "coordinates": [7138, 6537]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhangjiakou"
+                },
+                "coordinates": [6831, 6940]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tangshan"
+                },
+                "coordinates": [7404, 6569]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anyang"
+                },
+                "coordinates": [6730, 5479]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiaozuo"
+                },
+                "coordinates": [6532, 5224]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Kaifeng"
+                },
+                "coordinates": [6730, 5101]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shangqiu"
+                },
+                "coordinates": [6958, 4978]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Pingdingshan"
+                },
+                "coordinates": [6546, 4757]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xinyang"
+                },
+                "coordinates": [6681, 4265]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xinxiang"
+                },
+                "coordinates": [6646, 5246]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Luoyang"
+                },
+                "coordinates": [6400, 5049]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Liaoyang"
+                },
+                "coordinates": [8278, 7078]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dandong"
+                },
+                "coordinates": [8491, 6729]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yingkow"
+                },
+                "coordinates": [8120, 6891]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jinzhou"
+                },
+                "coordinates": [7913, 7029]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fuxin"
+                },
+                "coordinates": [8012, 7303]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Benxi"
+                },
+                "coordinates": [8378, 7093]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fushun"
+                },
+                "coordinates": [8399, 7258]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jining"
+                },
+                "coordinates": [7115, 5270]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Weifang"
+                },
+                "coordinates": [7563, 5676]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Taian"
+                },
+                "coordinates": [7215, 5516]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Heze"
+                },
+                "coordinates": [6923, 5218]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Laiyang"
+                },
+                "coordinates": [7845, 5752]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xinyu"
+                },
+                "coordinates": [6831, 2934]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ganzhou"
+                },
+                "coordinates": [6835, 2355]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiujiang"
+                },
+                "coordinates": [7016, 3527]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changzhou"
+                },
+                "coordinates": [7715, 4157]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhenjiang"
+                },
+                "coordinates": [7620, 4293]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nantong"
+                },
+                "coordinates": [7865, 4234]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiaxing"
+                },
+                "coordinates": [7852, 3847]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huzhou"
+                },
+                "coordinates": [7738, 3878]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shaoxing"
+                },
+                "coordinates": [7820, 3610]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jinhua"
+                },
+                "coordinates": [7659, 3339]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Liaoyuan"
+                },
+                "coordinates": [8620, 7575]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tumen"
+                },
+                "coordinates": [9443, 7597]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Siping"
+                },
+                "coordinates": [8480, 7658]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baicheng"
+                },
+                "coordinates": [8215, 8412]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuhai"
+                },
+                "coordinates": [5408, 6581]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Erenhot"
+                },
+                "coordinates": [6312, 7810]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jining"
+                },
+                "coordinates": [6507, 7001]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Arxan"
+                },
+                "coordinates": [7715, 8892]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Manzhouli"
+                },
+                "coordinates": [7270, 9635]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xilinhot"
+                },
+                "coordinates": [7027, 7896]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Heihe"
+                },
+                "coordinates": [9026, 9835]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qitaihe"
+                },
+                "coordinates": [9623, 8467]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yichun"
+                },
+                "coordinates": [9281, 9052]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hegang"
+                },
+                "coordinates": [9539, 8959]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nenjiang"
+                },
+                "coordinates": [8638, 9506]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nehe"
+                },
+                "coordinates": [8577, 9294]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Mudangiang"
+                },
+                "coordinates": [9402, 8091]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xuanzhou"
+                },
+                "coordinates": [7502, 3903]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhuhai"
+                },
+                "coordinates": [6593, 1236]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xianyang"
+                },
+                "coordinates": [5742, 4946]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xiangfan"
+                },
+                "coordinates": [6340, 4231]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Suining"
+                },
+                "coordinates": [5184, 3774]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lingyuan"
+                },
+                "coordinates": [7615, 7066]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Weihai"
+                },
+                "coordinates": [8089, 5915]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yichun"
+                },
+                "coordinates": [6738, 2944]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yancheng"
+                },
+                "coordinates": [7742, 4651]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fuyang"
+                },
+                "coordinates": [7712, 3627]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xiamen"
+                },
+                "coordinates": [7384, 1904]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nanchong"
+                },
+                "coordinates": [5288, 3850]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Neijiang"
+                },
+                "coordinates": [5099, 3481]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nanyang"
+                },
+                "coordinates": [6411, 4533]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jinxi"
+                },
+                "coordinates": [7866, 6915]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yantai"
+                },
+                "coordinates": [7966, 5925]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zaozhuang"
+                },
+                "coordinates": [7294, 5110]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Suzhou"
+                },
+                "coordinates": [7829, 4010]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xuzhou"
+                },
+                "coordinates": [7226, 4926]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuxi"
+                },
+                "coordinates": [7773, 4096]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jilin"
+                },
+                "coordinates": [8869, 7868]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhangye"
+                },
+                "coordinates": [4293, 6355]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuwei"
+                },
+                "coordinates": [4677, 6047]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dunhuang"
+                },
+                "coordinates": [3278, 6728]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tianshui"
+                },
+                "coordinates": [5251, 5024]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dulan"
+                },
+                "coordinates": [3910, 5505]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Golmud"
+                },
+                "coordinates": [3317, 5582]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yulin"
+                },
+                "coordinates": [5993, 1344]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Bose"
+                },
+                "coordinates": [5373, 1734]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuzhou"
+                },
+                "coordinates": [6199, 1605]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lupanshui"
+                },
+                "coordinates": [5061, 2563]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Quanzhou"
+                },
+                "coordinates": [7471, 2042]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hefei"
+                },
+                "coordinates": [7243, 4179]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Suzhou"
+                },
+                "coordinates": [7191, 4728]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhanjiang"
+                },
+                "coordinates": [6034, 905]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shaoguan"
+                },
+                "coordinates": [6595, 2011]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xigaze"
+                },
+                "coordinates": [2264, 3379]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shache"
+                },
+                "coordinates": [224, 6200]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yining"
+                },
+                "coordinates": [943, 7883]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Altay"
+                },
+                "coordinates": [2130, 9102]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shizuishan"
+                },
+                "coordinates": [5401, 6448]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yulin"
+                },
+                "coordinates": [5920, 6156]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ankang"
+                },
+                "coordinates": [5795, 4433]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Houma"
+                },
+                "coordinates": [6179, 5337]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yueyang"
+                },
+                "coordinates": [6511, 3420]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hengyang"
+                },
+                "coordinates": [6421, 2651]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Mianyang"
+                },
+                "coordinates": [5050, 4062]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xichang"
+                },
+                "coordinates": [4617, 2958]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baoshan"
+                },
+                "coordinates": [4065, 2109]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Gejiu"
+                },
+                "coordinates": [4766, 1574]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shijianzhuang"
+                },
+                "coordinates": [6752, 6085]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Handan"
+                },
+                "coordinates": [6752, 5633]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Anshan"
+                },
+                "coordinates": [8236, 7027]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dalian"
+                },
+                "coordinates": [8006, 6353]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qingdao"
+                },
+                "coordinates": [7778, 5482]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Linyi"
+                },
+                "coordinates": [7428, 5172]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huaiyin"
+                },
+                "coordinates": [7550, 4711]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wenzhou"
+                },
+                "coordinates": [7834, 3001]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ningbo"
+                },
+                "coordinates": [7992, 3573]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tongliao"
+                },
+                "coordinates": [8118, 7797]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hohhot"
+                },
+                "coordinates": [6258, 6937]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chifeng"
+                },
+                "coordinates": [7536, 7382]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Ulanhot"
+                },
+                "coordinates": [8086, 8553]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hailar"
+                },
+                "coordinates": [7668, 9512]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiamusi"
+                },
+                "coordinates": [9535, 8784]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Beian"
+                },
+                "coordinates": [8857, 9217]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Daqing"
+                },
+                "coordinates": [8597, 8707]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jixi"
+                },
+                "coordinates": [9644, 8314]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jiayuguan"
+                },
+                "coordinates": [3916, 6629]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xining"
+                },
+                "coordinates": [4524, 5645]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Guilin"
+                },
+                "coordinates": [6016, 2159]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Huainan"
+                },
+                "coordinates": [7191, 4419]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shantou"
+                },
+                "coordinates": [7137, 1572]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lhasa"
+                },
+                "coordinates": [2653, 3500]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hami"
+                },
+                "coordinates": [3077, 7553]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hotan"
+                },
+                "coordinates": [694, 5792]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Kashgar"
+                },
+                "coordinates": [0, 6523]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Yinchuan"
+                },
+                "coordinates": [5313, 6213]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Pingxiang"
+                },
+                "coordinates": [6642, 2878]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Qiqihar"
+                },
+                "coordinates": [8420, 8943]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shenzhen"
+                },
+                "coordinates": [6690, 1320]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zibo"
+                },
+                "coordinates": [7379, 5701]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Lanzhou"
+                },
+                "coordinates": [4878, 5472]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nanning"
+                },
+                "coordinates": [5672, 1403]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Guiyang"
+                },
+                "coordinates": [5392, 2559]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chongqing"
+                },
+                "coordinates": [5370, 3476]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Fuzhou"
+                },
+                "coordinates": [7598, 2405]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Guangzhou"
+                },
+                "coordinates": [6550, 1503]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Dongguan"
+                },
+                "coordinates": [6624, 1473]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Xian"
+                },
+                "coordinates": [5773, 4924]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Taiyuan"
+                },
+                "coordinates": [6413, 6031]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Wuhan"
+                },
+                "coordinates": [6716, 3788]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changsha"
+                },
+                "coordinates": [6488, 3057]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Kunming"
+                },
+                "coordinates": [4683, 2094]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Zhengzhou"
+                },
+                "coordinates": [6610, 5072]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shenyeng"
+                },
+                "coordinates": [8325, 7239]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Jinan"
+                },
+                "coordinates": [7194, 5662]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Tianjin"
+                },
+                "coordinates": [7229, 6417]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nanchang"
+                },
+                "coordinates": [6998, 3204]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Nanjing"
+                },
+                "coordinates": [7507, 4240]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Hangzhou"
+                },
+                "coordinates": [7750, 3687]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Changchun"
+                },
+                "coordinates": [8657, 7873]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Baotou"
+                },
+                "coordinates": [5936, 6885]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Harbin"
+                },
+                "coordinates": [8887, 8452]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Urumqi"
+                },
+                "coordinates": [2035, 7854]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Chengdu"
+                },
+                "coordinates": [4927, 3816]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Beijing"
+                },
+                "coordinates": [7087, 6663]
+            }, {
+                "type": "Point",
+                "properties": {
+                    "name": "Shanghai"
+                },
+                "coordinates": [7972, 3984]
+            }]
+        }
+    },
+    "arcs": [],
+    "transform": {
+        "scale": [0.005702801033706897, 0.0032527468335985196],
+        "translate": [75.9699259022097, 18.259104539323175]
+    }
+}

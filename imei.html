@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <!--    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">-->
+    <script src="nv.d3.js"></script>
+    <style>
+        .bar:hover {
+            fill: orange !important;
+        }
+        
+        section {
+            height: 250px;
+            border: 1px solid #66cc99;
+            border-radius: 4px;
+        }
+        
+        div.pie {
+            height: 250px;
+        }
+        
+        div.bar {
+            height: 250px;
+        }
+        
+        .nv-legend-text {
+            font-size: 9px !important;
+        }
+        
+        .carousel-control {
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" id="DOA">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-2">
+                            <section class="col-xs-5" id="bajaj">
+                                <div class="col-xs-10 pie" id="pieChart">
+                                    <svg></svg>
+                                </div>
+                                <div class="col-xs-2 bar" id='stackedBar'>
+                                    <div style="height:24%"></div>
+                                    <div style="height:60%">
+                                        <div id='app_1' style="background-color:#17becf;border: 1px solid white;  padding:2px"></div>
+                                        <div id='app_2' style="background-color:#66cc99;border: 1px solid white;  padding:2px"></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-xs-5" id="prop">
+                                <div class="col-xs-10 pie" id="pieChart">
+                                    <svg></svg>
+                                </div>
+                                <div class="col-xs-2 bar" id='stackedBar'>
+                                    <div style="height:24%"></div>
+                                    <div style="background-color:#17becf;border: 1px solid white; height:20%;"></div>
+                                    <div style="background-color:#66cc99;border: 1px solid white; height:40%"></div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="DOB">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-4">
+                            <section class="col-xs-5" id="bajajProp">
+                                <div class="col-xs-10 pie" id="pieChart">
+                                    <svg></svg>
+                                </div>
+                                <div class="col-xs-2 bar" id='stackedBar'>
+                                    <div style="height:24%"></div>
+                                    <div style="background-color:#17becf;border: 1px solid white; height:20%;"></div>
+                                    <div style="background-color:#66cc99;border: 1px solid white; height:40%"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="DOC">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <section class="col-xs-4">
+                                <div class="col-xs-10 pie" id="pieChart">
+                                    <svg></svg>
+                                </div>
+                                <div class="col-xs-2 bar" id='stackedBar'>
+                                    <div style="height:24%"></div>
+                                    <div style="background-color:#17becf;border: 1px solid white; height:20%"></div>
+                                    <div style="background-color:#66cc99;border: 1px solid white; height:40%"></div>
+                                </div>
+                            </section>
+                            <section class="col-xs-4">
+                                <div class="col-xs-10 pie" id="pie2Chart">
+                                    <svg></svg>
+                                </div>
+                                <div class="col-xs-2 bar" id='stackedBar'>
+                                    <div style="height:24%"></div>
+                                    <div style="background-color:#17becf;border: 1px solid white; height:20%"></div>
+                                    <div style="background-color:#66cc99;border: 1px solid white; height:40%"></div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+    <script>
+        var myColors = ["#1f77b4", "#ff7f0e", "#17becf", "#66cc99"];
+        d3.scale.myColors = function () {
+            return d3.scale.ordinal().range(myColors);
+        };
+        var width = $("#bajaj #pieChart").width(),
+            height = $("#bajaj #pieChart").height();
+        nv.addGraph(function () {
+            var chart = nv.models.pieChart()
+                .x(function (d) {
+                    return d.label
+                })
+                .y(function (d) {
+                    return d.value
+                })
+                .tooltips(false)
+                .showLegend(true)
+                .showLabels(true) //Display pie labels
+                .labelThreshold(.05) //Configure the minimum slice size for labels to show up
+                .labelType("value")
+                .color(d3.scale.myColors().range()); //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+
+            data = exampleData();
+            var h = ((data[2].value / (data[2].value + data[3].value)) * 100);
+            $("#app_1").css("height", h + "%");
+            var h = ((data[3].value / (data[2].value + data[3].value)) * 100);
+            $("#app_2").css("height", h + "%");
+
+            $("#app_1").html(data[2].value);
+            $("#app_2").html(data[3].value);
+            data[3].value = 0;
+            data[2].value = 0;
+
+            d3.select("#bajaj #pieChart svg")
+                .datum(data)
+                .transition().duration(3500)
+                .call(chart)
+                .style({
+                    'width': width,
+                    'height': height
+                });
+
+
+            d3.select("#prop #pieChart svg")
+                .datum(exampleData2())
+                .transition().duration(3500)
+                .call(chart)
+                .style({
+                    'width': width,
+                    'height': height
+                });
+
+            return chart;
+        });
+
+        nv.addGraph(function () {
+            var chart2 = nv.models.pieChart()
+                .x(function (d) {
+                    return d.label
+                })
+                .y(function (d) {
+                    return d.value
+                })
+                .tooltips(false)
+                .showLegend(true)
+                .showLabels(true) //Display pie labels
+                .labelThreshold(.05) //Configure the minimum slice size for labels to show up
+                .labelType("value")
+                .width(width)
+                .height(height)
+                .color(d3.scale.myColors().range()); //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+
+            data = exampleData();
+            //            var h = ((data[2].value / (data[2].value + data[3].value)) * 100);
+            //            $("#app_1").css("height", h + "%");
+            //            var h = ((data[3].value / (data[2].value + data[3].value)) * 100);
+            //            $("#app_2").css("height", h + "%");
+
+            $("#app_1").html(data[2].value);
+            $("#app_2").html(data[3].value);
+            data[3].value = 0;
+            data[2].value = 0;
+            $('#myCarousel').on('slid.bs.carousel', function () {
+                d3.select("#bajajProp #pieChart svg")
+                    .datum(data)
+                    .transition().duration(3500)
+                    .call(chart2)
+                    .style({
+                        'width': width,
+                        'height': height
+                    });
+                return chart2;
+            });
+
+        });
+
+        function exampleData() {
+            return [
+                {
+                    "label": "Approved",
+                    "value": 729
+                },
+                {
+                    "label": "Rejected",
+                    "value": 232
+                },
+                {
+                    "label": "System Approved",
+                    "value": 200
+                },
+                {
+                    "label": "Exception Approved",
+                    "value": 500
+                }
+            ];
+        }
+
+        function exampleData2() {
+            return [
+                {
+                    "label": "Rejected",
+                    "value": 234
+                },
+                {
+                    "label": "Approved",
+                    "value": 232
+                },
+                {
+                    "label": "System Approved",
+                    "value": 0
+                },
+                {
+                    "label": "Exception Approved",
+                    "value": 0
+                }
+            ];
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+[
+    "key": "DOA",
+    "obj": [
+        "key": "Bajaj"
+        "obj": [{
+                "label": "Rejected",
+                "value": 234
+                },
+            {
+                "label": "Approved",
+                "value": 232
+                },
+            {
+                "label": "System Approved",
+                "value": 0
+                },
+            {
+                "label": "Exception Approved",
+                "value": 0
+                }
+            ]
+    ]
+]

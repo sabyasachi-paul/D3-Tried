@@ -1,0 +1,10 @@
+[
+    {"province_code": "Hongkong", "color": "#66CCCC", "city": [{"name": "ABS", "value":234}]},
+    {"province_code": "Yunnan", "color": "#66CCCC", "city": [{"name": "AB3", "value":23432},{"name": "324dfAB3", "value":232}]},
+    {"province_code": "Jiangxi", "color": "#66CCCC", "city": [{"name": "AB4", "value":2342}]},
+    {"province_code": "Zhuozhou", "color": "#66CCCC", "city": [{"name": "AB65", "value":234534}]},
+    {"province_code": "Guangdong", "color": "#66CCCC", "city": [{"name": "ABS67", "value":234234}]},
+    {"province_code": "Xinjiang", "color": "#66CCCC", "city": [{"name": "ABS43", "value":56234}]},
+    {"province_code": "Beijing", "color": "#66CCCC", "city": [{"name": "A435S", "value":654234}]},
+    {"province_code": "Chongqing", "color": "#66CCCC", "city": [{"name": "BS435", "value":267534}]}
+]

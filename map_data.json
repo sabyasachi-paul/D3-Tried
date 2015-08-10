@@ -1,0 +1,17 @@
+[
+    {"country_code": "BRA", "value": 10203, "color": "#664200"},
+    {"country_code": "ARG", "value": 1203, "color": "#7f5200"},
+    {"country_code": "CHL", "value": 103, "color": "#996300"},
+    {"country_code": "PER", "value": 1023, "color": "#b27300"},
+    {"country_code": "BOL", "value": 1203, "color": "#cc8400"},
+    {"country_code": "COL", "value": 14203, "color": "#e59400"},
+    {"country_code": "ECU", "value": 15203, "color": "#ffa500"},
+    {"country_code": "VEN", "value": 1203, "color": "#ffae19"},
+    {"country_code": "GUY", "value": 170203, "color": "#ffb732"},
+    {"country_code": "GUF", "value": 18203, "color": "#ffc04c"},
+    {"country_code": "PRY", "value": 19203, "color": "#ffc966"},
+    {"country_code": "URY", "value": 1223, "color": "#ffd27f"},
+    {"country_code": "FLK", "value": 10303, "color": "#ffdb99"},
+    {"country_code": "SUR", "value": 10303, "color": "#ffe4b2"},
+    {"country_code": "MEX", "value": 1033, "color": "#ffedcc"}
+]
